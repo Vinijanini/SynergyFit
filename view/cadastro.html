@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro SynergyFit</title>
+    <link rel="shortcut icon" href="../img/favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+    <header>
+
+        <a href="../index.html">
+            <img src="../img/logo_nova.jfif" id="logo">
+        </a>
+
+        <div class="menu">
+            <nav>
+                <a href="home.html" class="link-nav">Home</a>
+                <a href="login.html" class="link-nav">Area do aluno</a>
+                <a href="cadastro.html" class="link-nav" id="clicado" >Me matricular</a>
+            </nav>
+        </div>
+
+    </header> 
+
+    <main>
+        <h1 id="titulo">Crie seu cadastro na <br><span style="font-size: 24px;">SynergyFit</span></h1>
+
+        <form>
+    
+                <div class="campo">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                </div>
+    
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email" placeholder="Digite seu email">
+                </div>
+    
+                <div class="campo">
+                    <label for="cpf/cnpj">CPF/CNPJ</label>
+                    <input type="text" name="cpf/cnpj" id="cpf_cnpj" placeholder="Digite seu CPF/CNPJ">
+                </div>
+    
+                <div class="campo">
+                    <label for="data">Data de nascimento</label>
+                    <input type="date" name="data"  id="data">
+                </div>
+    
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                </div>
+    
+                <div class="campo">
+                    <label for="conf_senha">Confirmar Senha</label>
+                    <input type="password" name="confirmar_senha"  id="conf_senha" placeholder="Digite sua senha">
+                </div>
+    
+                <div class="campo">
+                    <label for="terms" id="label_check">Termos</label>
+                    <input type="checkbox" name="terms"  id="terms">
+                </div>
+
+
+            <input type="button" value="Finalizar cadastro" id="botao">
+
+            <p id="resposta"></p>
+
+        </form>
+
+    </main>
+
+    <script src="../script/cadastro.js"></script>
+
+    
+</body>
+</html>

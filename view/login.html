@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="../css/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login SynergyFit</title>
+    <link rel="shortcut icon" href="../img/favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+    <header>
+
+        <a href="../index.html">
+            <img src="../img/logo_nova.jfif" id="logo">
+        </a>
+
+        <div class="menu">
+            <nav>
+                <a href="home.html" class="link-nav">Home</a>
+                <a href="login.html" class="link-nav" id="clicado">Area do aluno</a>
+                <a href="cadastro.html" class="link-nav">Me matricular</a>
+            </nav>
+        </div>
+    </header> 
+
+    <main>
+        <h1 id="titulo"></h1>
+        <div style="text-align: center; margin: 20px;">
+            <img src="../img/icone user.png" width="70px">
+        </div>
+
+        <p id="login">Se você ja for aluno, <span>faça seu login!</span></p>
+
+        <form id="form">
+        
+            <div class="campo">
+                <label for="email">Email</label>
+                <img src="../img/icone_email.png" width="25px" class="icones">  
+                <input type="text" name="email" id="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <img src="../img/icone chave.png" width="25px" class="icones">
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <a href="#" id="esqueci">Esqueceu a senha?</a>
+
+            <input type="button" value="Entrar" id="botao">
+
+            <p id="resposta"></p>
+            
+        </form>
+
+        <div id="informacoes_logado">
+            <h1>Email:</h1>
+            <p id="info_email"></p>
+            <h1>CPF/CNPJ:</h1>
+            <p id="info_cpf"></p>
+            <h1>Data de Nascimento</h1>
+            <p id="info_data"></p>
+        </div>
+
+        <h2 id="deslogar">Deslogar</h2>
+
+    </main>
+
+    <script src="../script/login.js"></script>
+
+</body>
+</html>

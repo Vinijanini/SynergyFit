@@ -1,0 +1,308 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+   
+    background-color: white;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+
+#clicado {
+    background-color:#412261 ;
+    color: white;
+    transition: 0.3s;
+}
+
+header{
+    display: flex; /* fica flexivel na horizontal*/
+    align-items: center; /* centraliza os itens verticalmente */
+    padding: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    margin: 0;
+    box-shadow: 0px 1px 4px black;
+    text-decoration: none; /* elimina a linha(sublinhado) embaixo do link */
+   
+    
+   
+}
+
+a.link-nav {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px auto;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 0 black;
+}
+
+a.link-nav:hover {
+    background-color:#412261 ;
+    color: white;
+    transition: 0.3s;
+}
+#login{
+    text-align: center;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+    flex-grow: 1; /* itens crescerem igualmente dentro daquele espaço */
+    padding: 10px;
+    font-size: 12px;
+}
+
+#titulo{
+    color: #412261;
+}
+
+#user{
+    text-align: center;
+}
+
+.icones {
+    position: relative;
+    bottom: -7px;
+}
+
+#span-fit{
+    color:#470E75 ;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 2px 3px #412261;
+    background-color: white;
+}
+
+#informacoes_logado {
+    padding: 10px;
+    border-radius: 5%;
+    display: none;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(236, 236, 236, 0.658);
+    box-shadow: 0px 2px 3px #412261;
+}
+
+#informacoes_logado > p {
+    color: #7335b1;
+    text-shadow: 0.5px 0.5px 1px #4b22749f;
+    text-decoration: underline;
+}
+
+.campo {
+    margin: 10px auto;
+}
+
+span{
+    color:darkorange ;
+}
+#titulo {
+    text-align: center;
+    
+}
+label {
+    display: block;
+    text-align: center;
+}
+#label_check {
+    display: inline;
+}
+input[type='checkbox'] {
+    position: relative;
+    bottom: -4px;
+}
+#botao {
+    color: white;
+    background-color:chocolate;
+    border: 2px solid;
+    width: 100px;
+    height: 30px;
+    margin: 5px auto 0px auto;
+    border-radius: 8px;
+}
+#botao:hover {
+    background-color: #643494;
+    transition: 0.3s;
+    transform: translateY(-4px);
+    box-shadow: 2px 2px 3px rgb(110, 110, 110);
+}
+#botao:active {
+    border-color:  #0ae6ff;
+    transition: 0.3s;
+    transform: translateY(3px);
+}
+
+#esqueci{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    color: black;
+     
+}
+
+input {
+    border-radius: 15px;
+}
+
+#resposta {
+    text-align: center;
+}
+
+#deslogar {
+    display: none;
+    text-align: center;
+}
+
+#deslogar:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#deslogar:active {
+    color: #7335b1;
+}
+
+
+
+/*Celular*/
+@media(min-width:320px) and (max-width:500px) {
+    header {
+        height: 70px;
+    }
+    a.link-nav {
+        font-size: 0.4em;
+        margin: 0px 10px;
+    }
+    #logo {
+        width: 110px;
+    }
+    #marca {
+        font-size: 0.8em;
+    }
+    #titulo{
+        font-size: 1.5em;
+    }
+    form, #informacoes_logado {
+        width: 65%;
+    }
+    input[type='text'], input[type='date'], input[type='password'] {
+        width: 150px;
+    }
+
+    #informacoes_logado > p {
+        font-size: 1.2em;
+    }
+    
+}
+
+/*Tablet*/
+@media(min-width:501px) and (max-width:767px) {
+    header {
+        height: 100px;
+    }
+    a.link-nav {
+        font-size: 1em;
+        margin: 0px 16px;
+    }
+    #logo {
+        width: 120px;
+    }
+    #marca {
+        font-size: 0.8em;
+    }
+    #titulo{
+        font-size: 1.6em;
+    }
+    form, #informacoes_logado {
+        width: 70%;
+    }
+    input[type='text'], input[type='date'], input[type='password'] {
+        width: 200px;
+        height: 25px;
+    }
+    #informacoes_logado > p {
+        font-size: 1.3em;
+    }
+}
+
+/*Desktop menor*/
+@media(min-width:767px) and (max-width:1440px) {
+    header {
+        height: 120px;
+    }
+    a.link-nav {
+        font-size: 1.2em;
+        margin: 0px 20px;
+    }
+    #logo {
+        width: 135px;
+    }
+    #marca {
+        font-size: 1.3em;
+    }
+    #titulo{
+        font-size: 1.9em;
+    }
+    form, #informacoes_logado {
+        width: 65%;
+    }
+    input[type='text'], input[type='date'], input[type='password'] {
+        width: 230px;
+        height: 25px;
+    }
+    #informacoes_logado > p {
+        font-size: 1.4em;
+    }
+}
+
+
+/*Desktop maior*/
+@media(min-width:1441px){
+    header {
+        height: 130px;
+    }
+    a.link-nav {
+        font-size: 1.6em;
+        margin: 0px 30px;
+    }
+    #logo {
+        width: 145px;
+    }
+    #marca {
+        font-size: 1.7em;
+    }
+    #proxima {
+        font-size: 2.2em;
+    }
+    #titulo{
+        font-size: 2.5em;
+    }
+    form, #informacoes_logado {
+        width: 40%;
+    }
+    input[type='text'], input[type='date'], input[type='password'] {
+        width: 250px;
+        height: 25px;
+    }
+    #informacoes_logado > p {
+        font-size: 1.6em;
+    }
+
+}

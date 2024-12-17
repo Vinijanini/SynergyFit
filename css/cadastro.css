@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+header{
+    display: flex; /* fica flexivel na horizontal*/
+    align-items: center; /* centraliza os itens verticalmente */
+    padding: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    margin: 0;
+    text-decoration: none; /* elimina a linha(sublinhado) embaixo do link */
+    box-shadow: 0px 1px 4px black;
+   
+}
+
+a.link-nav {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px auto;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 0 black;
+}
+
+a.link-nav:hover {
+    background-color: #340A46;
+    color: white;
+    transition: 0.3s;
+}
+
+#clicado {
+    background-color: #340A46;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+    flex-grow: 1; /* itens crescerem igualmente dentro daquele espaço */
+    padding: 10px;
+    font-size: 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;   
+    box-shadow: 0px 1px 3px #643494;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 15px;
+    
+}
+.campo {
+    margin: 10px auto;
+
+}
+
+span{
+    color:#FF6600;
+}
+#span-fit{
+    color: #44276F;
+}
+#titulo {
+    text-align: center;
+    margin: 25px 0px 25px 0px;
+}
+label {
+    display: block;
+
+}
+#label_check {
+    display: inline;
+}
+input[type='checkbox'] {
+    position: relative;
+    bottom: -2px;
+}
+#botao {
+    color: white;
+    background-color: #eb671b;
+    border: 1px solid;
+    width: 100px;
+    margin: auto;
+    border-radius: 8px;
+}
+#botao:hover {
+    background-color: #643494;
+    transition: 0.3s;
+    transform: translateY(-4px);
+    box-shadow: 2px 2px 3px rgb(110, 110, 110);
+}
+#botao:active {
+    border-color:  rgb(153, 0, 255);
+    transition: 0.3s;
+    transform: translateY(3px);
+}
+
+input {
+    border-radius: 15px;
+}
+
+#resposta {
+    text-align: center;
+}
+
+/*Celular*/
+@media(min-width:320px) and (max-width:500px) {
+    header {
+        height: 70px;
+    }
+    a.link-nav {
+        font-size: 0.5em;
+        margin: 0px 10px;
+    }
+    #logo {
+        width: 110px;
+    }
+    #marca {
+        font-size: 0.8em;
+    }
+    #titulo{
+        font-size: 0.8em;
+    }
+    form {
+        width: 75%;
+    }
+    input[type='text'], input[type='date'], input[type='password'] {
+        width: 150px;
+    }
+    #botao {
+        width: 120px;
+        height: 25px;
+    }
+}
+
+/*Tablet*/
+@media(min-width:501px) and (max-width:767px) {
+    header {
+        height: 100px;
+    }
+    a.link-nav {
+        font-size: 0.9em;
+        margin: 0px 16px;
+    }
+    #logo {
+        width: 120px;
+    }
+    #marca {
+        font-size: 1em;
+    }
+    #titulo{
+        font-size: 1.2em;
+    }
+    form {
+        width: 70%;
+    }
+    input[type='text'], input[type='date'], input[type='password'] {
+        width: 200px;
+        height: 25px;
+    }
+    #botao {
+        width: 140px;
+        height: 30px;
+    }
+}
+
+/*Desktop menor*/
+@media(min-width:767px) and (max-width:1440px) {
+    header {
+        height: 120px;
+    }
+    a.link-nav {
+        font-size: 1.2em;
+        margin: 0px 20px;
+    }
+    #logo {
+        width: 135px;
+    }
+    #marca {
+        font-size: 1.4em;
+    }
+    #titulo{
+        font-size: 1.9em;
+    }
+    form {
+        width: 65%;
+    }
+    input[type='text'], input[type='date'], input[type='password'] {
+        width: 230px;
+        height: 25px;
+    }
+    #botao {
+        width: 150px;
+        height: 35px;
+    }
+}
+
+
+/*Desktop maior*/
+@media(min-width:1441px){
+    header {
+        height: 120px;
+    }
+    a.link-nav {
+        font-size: 1.6em;
+        margin: 0px 20px;
+    }
+    #logo {
+        width: 145px;
+    }
+    #marca {
+        font-size: 1.6em;
+    }
+    #proxima {
+        font-size: 2.2em;
+    }
+    #titulo{
+        font-size: 1.6em;
+    }
+    form {
+        width: 40%;
+    }
+    input[type='text'], input[type='date'], input[type='password'] {
+        width: 250px;
+        height: 25px;
+    }
+    #botao {
+        width: 170px;
+        height: 40px;
+    }
+}
